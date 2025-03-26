@@ -1,0 +1,12 @@
+document.writeln("Ameed");
+document.write("Halabi");
+const NamE = {firstname:"Ameed", lastname:"Halabi"};
+console.log(NamE);
+const array = ["Robert" , "Ronaldo" , "Dan"]
+console.log(array)
+let Name = prompt("What is your name : ")
+if (confirm("Are you sure you want to delete this item?"))
+alert("The item deleted ");
+let name = "john";
+let admin = name;
+console.log(name)
