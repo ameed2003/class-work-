@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>BLALABLAL</h1>
+  <p id="elem1">1</p>
+  <p id="elem2">2</p>
+  <p id="elem3">3</p>
+
+  <p class="www">elem 1</p>
+  <p class="www">elem 2</p>
+  <p class="www">elem 3</p>
+
+  <input type="button" onclick="changeCollor()" value="change Collor">
+  <script>
+    function changeCollor () {
+      const elem = document.querySelector( "h1" );
+      elem.style.color = "blue";
+    }
+  </script>
+
+
+  <input type="button" onclick="Hide()" value="Hide">
+  <script>
+    function Hide () {
+      const elem = document.querySelector( "h1" );
+      elem.style.display = "none";
+    }
+  </script>
+
+  <input type="button" onclick="Appear()" value="Appear">
+  <script>
+    function Appear () {
+      const elem = document.querySelector( "h1" );
+      elem.style.display = "block";
+    }
+  </script>
+<button value="Click me" onclick="ChangeText()">Click me</button>
+
+// אירועי הדפדפן :
+
+// EX #1 :
+<div id="hoverBox" style="width:100px; height:100px; background-color: gray;"></div>
+
+<script>
+  const box = document.getElementById("hoverBox");
+  box.addEventListener("mouseover", () => {
+    box.style.backgroundColor = "blue";
+  });
+</script>
+
+// EX #2 : 
+
+<div id="hoverBox2" style="width:100px; height:100px; background-color: gray;"></div>
+
+<script>
+  const box2 = document.getElementById("hoverBox2");
+  box2.addEventListener("mouseout", () => {
+    box2.style.backgroundColor = "gray";
+  });
+</script>
+
+
+// EX #3 : 
+<button id="clickBtn">לחץ כאן</button>
+<p>נלחץ: <span id="clickCount">0</span> פעמים</p>
+
+<script>
+  let count = 0;
+  const button = document.getElementById("clickBtn");
+  const countSpan = document.getElementById("clickCount");
+
+  button.addEventListener("click", () => {
+    count++;
+    countSpan.textContent = count;
+  });
+</script>
+
+
+  <script src="./jsjs.js"></>
+</body>
+
+</html>
